@@ -1,0 +1,317 @@
+[2025-10-31 02:18:30] Generating movies.dat with 5000 movies...
+[2025-10-31 02:18:30] Saved generated movies to data/movies.dat (5000 records).
+[2025-10-31 02:18:30] Generating users.dat with 2000 users...
+[2025-10-31 02:18:30] Saved generated users to data/users.dat (2000 records).
+[2025-10-31 02:18:30] Generating ratings.dat with 100000 ratings across 2000 users...
+[2025-10-31 02:18:30] Saved generated ratings to data/ratings.dat (100000 records).
+[2025-10-31 02:18:30] Dataframes loaded successfully.
+[2025-10-31 02:18:51] Dataframes loaded successfully.
+[2025-10-31 02:18:52] Dataframes loaded successfully.
+[2025-10-31 02:18:53] Dataframes loaded successfully.
+[2025-10-31 02:19:06] Dataframes loaded successfully.
+[2025-10-31 02:19:11] Dataframes loaded successfully.
+[2025-10-31 02:19:17] Dataframes loaded successfully.
+[2025-10-31 02:19:26] Dataframes loaded successfully.
+[2025-10-31 02:19:26] Preparing features...
+[2025-10-31 02:19:30] Prepared features with 28 columns.
+[2025-10-31 02:19:30] Training XGBoost model...
+[2025-10-31 02:19:30] Training error: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "/Users/abhinav/Desktop/Recommendator_Movies/app.py", line 1365, in <module>
+    model = train_xgboost(X_train, y_train, X_valid=X_test, y_valid=y_test, params=params, num_boost_round=n_estimators)
+  File "/Users/abhinav/Desktop/Recommendator_Movies/app.py", line 1166, in train_xgboost
+    model.fit(X_train, y_train, early_stopping_rounds=20, eval_set=[(X_valid, y_valid)], verbose=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhinav/Desktop/Recommendator_Movies/venv/lib/python3.14/site-packages/xgboost/core.py", line 774, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+[2025-10-31 02:20:13] Dataframes loaded successfully.
+[2025-10-31 02:20:13] Generating movies.dat with 5000 movies...
+[2025-10-31 02:20:13] Saved generated movies to data/movies.dat (5000 records).
+[2025-10-31 02:20:36] Dataframes loaded successfully.
+[2025-10-31 02:20:40] Dataframes loaded successfully.
+[2025-10-31 02:21:08] Dataframes loaded successfully.
+[2025-10-31 02:21:08] Preparing features...
+[2025-10-31 02:21:09] Prepared features with 31 columns.
+[2025-10-31 02:21:09] Training XGBoost model...
+[2025-10-31 02:21:09] Training error: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "/Users/abhinav/Desktop/Recommendator_Movies/app.py", line 1365, in <module>
+    model = train_xgboost(X_train, y_train, X_valid=X_test, y_valid=y_test, params=params, num_boost_round=n_estimators)
+  File "/Users/abhinav/Desktop/Recommendator_Movies/app.py", line 1166, in train_xgboost
+    model.fit(X_train, y_train, early_stopping_rounds=20, eval_set=[(X_valid, y_valid)], verbose=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhinav/Desktop/Recommendator_Movies/venv/lib/python3.14/site-packages/xgboost/core.py", line 774, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+[2025-10-31 02:27:27] Data loaded.
+[2025-10-31 02:27:48] Data loaded.
+[2025-10-31 02:27:53] Data loaded.
+[2025-10-31 02:28:01] Data loaded.
+[2025-10-31 02:28:08] Data loaded.
+[2025-10-31 02:28:25] Data loaded.
+[2025-10-31 02:28:25] Preparing features...
+[2025-10-31 02:28:29] Feature matrix prepared with 28 features.
+[2025-10-31 02:28:29] Starting XGBoost training...
+[2025-10-31 02:28:29] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 02:28:31] XGBoost training finished.
+[2025-10-31 02:28:31] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 02:28:57] Data loaded.
+[2025-10-31 02:29:09] Data loaded.
+[2025-10-31 02:29:17] Data loaded.
+[2025-10-31 02:29:19] Data loaded.
+[2025-10-31 02:29:23] Data loaded.
+[2025-10-31 02:29:23] Building item-item collaborative filtering model...
+[2025-10-31 02:29:23] Item-item model built.
+[2025-10-31 02:29:27] Data loaded.
+[2025-10-31 02:29:39] Data loaded.
+[2025-10-31 02:29:50] Data loaded.
+[2025-10-31 02:29:54] Data loaded.
+[2025-10-31 02:29:55] Data loaded.
+[2025-10-31 02:30:00] Data loaded.
+[2025-10-31 02:30:01] Data loaded.
+[2025-10-31 02:30:04] Data loaded.
+[2025-10-31 02:30:10] Data loaded.
+[2025-10-31 02:30:10] Building content (genre+language) matrix...
+[2025-10-31 02:30:11] Content matrix ready.
+[2025-10-31 02:30:14] Data loaded.
+[2025-10-31 02:30:20] Data loaded.
+[2025-10-31 02:30:24] Data loaded.
+[2025-10-31 02:30:32] Data loaded.
+[2025-10-31 02:34:37] Data loaded.
+[2025-10-31 02:34:54] Data loaded.
+[2025-10-31 02:34:57] Data loaded.
+[2025-10-31 02:35:02] Data loaded.
+[2025-10-31 02:35:06] Data loaded.
+[2025-10-31 02:35:12] Data loaded.
+[2025-10-31 02:35:12] Preparing features...
+[2025-10-31 02:35:16] Feature matrix prepared with 28 features.
+[2025-10-31 02:35:16] Starting XGBoost training...
+[2025-10-31 02:35:16] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 02:35:17] XGBoost training finished.
+[2025-10-31 02:35:17] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 02:35:22] Data loaded.
+[2025-10-31 02:35:24] Data loaded.
+[2025-10-31 02:35:26] Data loaded.
+[2025-10-31 02:35:35] Data loaded.
+[2025-10-31 02:35:36] Data loaded.
+[2025-10-31 02:35:37] Data loaded.
+[2025-10-31 02:35:40] Data loaded.
+[2025-10-31 02:35:43] Data loaded.
+[2025-10-31 02:35:47] Data loaded.
+[2025-10-31 02:35:50] Data loaded.
+[2025-10-31 02:35:52] Data loaded.
+[2025-10-31 02:35:53] Data loaded.
+[2025-10-31 02:52:45] Data loaded.
+[2025-10-31 02:52:47] Data loaded.
+[2025-10-31 02:52:51] Data loaded.
+[2025-10-31 02:52:57] Data loaded.
+[2025-10-31 02:53:03] Data loaded.
+[2025-10-31 02:53:07] Data loaded.
+[2025-10-31 02:53:07] Preparing features...
+[2025-10-31 02:53:11] Feature matrix prepared with 28 features.
+[2025-10-31 02:53:11] Starting XGBoost training...
+[2025-10-31 02:53:11] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 02:53:13] XGBoost training finished.
+[2025-10-31 02:53:13] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 02:53:21] Data loaded.
+[2025-10-31 02:53:24] Data loaded.
+[2025-10-31 02:53:26] Data loaded.
+[2025-10-31 02:53:28] Data loaded.
+[2025-10-31 02:53:33] Data loaded.
+[2025-10-31 02:53:40] Data loaded.
+[2025-10-31 02:53:40] Building content (genre+language) matrix...
+[2025-10-31 02:53:41] Content matrix ready.
+[2025-10-31 02:53:44] Data loaded.
+[2025-10-31 02:53:59] Data loaded.
+[2025-10-31 02:53:59] Building item-item collaborative filtering model...
+[2025-10-31 02:54:00] Item-item model built.
+[2025-10-31 02:54:02] Data loaded.
+[2025-10-31 02:54:05] Data loaded.
+[2025-10-31 02:54:16] Data loaded.
+[2025-10-31 02:54:29] Data loaded.
+[2025-10-31 02:54:40] Data loaded.
+[2025-10-31 02:56:33] Data loaded.
+[2025-10-31 02:57:16] Data loaded.
+[2025-10-31 02:57:22] Data loaded.
+[2025-10-31 02:57:34] Data loaded.
+[2025-10-31 02:57:38] Data loaded.
+[2025-10-31 02:57:44] Data loaded.
+[2025-10-31 02:57:47] Data loaded.
+[2025-10-31 02:57:47] Preparing features...
+[2025-10-31 02:57:51] Feature matrix prepared with 28 features.
+[2025-10-31 02:57:51] Starting XGBoost training...
+[2025-10-31 02:57:51] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 02:57:53] XGBoost training finished.
+[2025-10-31 02:57:53] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 02:58:01] Data loaded.
+[2025-10-31 02:58:03] Data loaded.
+[2025-10-31 02:58:06] Data loaded.
+[2025-10-31 02:58:08] Data loaded.
+[2025-10-31 02:58:11] Data loaded.
+[2025-10-31 02:58:17] Data loaded.
+[2025-10-31 02:58:18] Data loaded.
+[2025-10-31 03:02:28] Data loaded.
+[2025-10-31 03:02:32] Data loaded.
+[2025-10-31 03:02:36] Data loaded.
+[2025-10-31 03:02:40] Data loaded.
+[2025-10-31 03:02:45] Data loaded.
+[2025-10-31 03:02:48] Data loaded.
+[2025-10-31 03:02:48] Preparing features...
+[2025-10-31 03:02:52] Feature matrix prepared with 28 features.
+[2025-10-31 03:02:52] Starting XGBoost training...
+[2025-10-31 03:02:52] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:02:54] XGBoost training finished.
+[2025-10-31 03:02:54] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:03:06] Data loaded.
+[2025-10-31 03:03:08] Data loaded.
+[2025-10-31 03:03:09] Data loaded.
+[2025-10-31 03:03:11] Data loaded.
+[2025-10-31 03:03:14] Data loaded.
+[2025-10-31 03:03:19] Data loaded.
+[2025-10-31 03:03:22] Data loaded.
+[2025-10-31 03:03:26] Data loaded.
+[2025-10-31 03:03:28] Data loaded.
+[2025-10-31 03:03:41] Data loaded.
+[2025-10-31 03:03:44] Data loaded.
+[2025-10-31 03:03:46] Data loaded.
+[2025-10-31 03:04:04] Data loaded.
+[2025-10-31 03:04:09] Data loaded.
+[2025-10-31 03:04:13] Data loaded.
+[2025-10-31 03:04:18] Data loaded.
+[2025-10-31 03:04:22] Data loaded.
+[2025-10-31 03:04:24] Data loaded.
+[2025-10-31 03:04:24] Preparing features...
+[2025-10-31 03:04:28] Feature matrix prepared with 28 features.
+[2025-10-31 03:04:28] Starting XGBoost training...
+[2025-10-31 03:04:28] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:04:29] Data loaded.
+[2025-10-31 03:04:29] Preparing features...
+[2025-10-31 03:04:32] XGBoost training finished.
+[2025-10-31 03:04:33] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:04:33] Feature matrix prepared with 28 features.
+[2025-10-31 03:04:33] Starting XGBoost training...
+[2025-10-31 03:04:33] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:04:35] XGBoost training finished.
+[2025-10-31 03:04:35] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:04:45] Data loaded.
+[2025-10-31 03:04:46] Data loaded.
+[2025-10-31 03:04:56] Data loaded.
+[2025-10-31 03:05:00] Data loaded.
+[2025-10-31 03:05:01] Data loaded.
+[2025-10-31 03:06:29] Data loaded.
+[2025-10-31 03:06:32] Data loaded.
+[2025-10-31 03:06:38] Data loaded.
+[2025-10-31 03:06:42] Data loaded.
+[2025-10-31 03:06:47] Data loaded.
+[2025-10-31 03:06:51] Data loaded.
+[2025-10-31 03:06:51] Preparing features...
+[2025-10-31 03:06:55] Feature matrix prepared with 28 features.
+[2025-10-31 03:06:55] Starting XGBoost training...
+[2025-10-31 03:06:55] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:06:56] XGBoost training finished.
+[2025-10-31 03:06:57] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:07:02] Data loaded.
+[2025-10-31 03:07:03] Data loaded.
+[2025-10-31 03:07:14] Data loaded.
+[2025-10-31 03:07:14] Building content (genre+language) matrix...
+[2025-10-31 03:07:15] Content matrix ready.
+[2025-10-31 03:07:21] Data loaded.
+[2025-10-31 03:07:22] Data loaded.
+[2025-10-31 03:08:49] Data loaded.
+[2025-10-31 03:08:51] Data loaded.
+[2025-10-31 03:08:57] Data loaded.
+[2025-10-31 03:09:01] Data loaded.
+[2025-10-31 03:09:06] Data loaded.
+[2025-10-31 03:09:11] Data loaded.
+[2025-10-31 03:09:11] Preparing features...
+[2025-10-31 03:09:14] Feature matrix prepared with 28 features.
+[2025-10-31 03:09:14] Starting XGBoost training...
+[2025-10-31 03:09:14] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:09:16] XGBoost training finished.
+[2025-10-31 03:09:16] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:09:22] Data loaded.
+[2025-10-31 03:09:28] Data loaded.
+[2025-10-31 03:09:32] Data loaded.
+[2025-10-31 03:09:36] Data loaded.
+[2025-10-31 03:09:41] Data loaded.
+[2025-10-31 03:09:45] Data loaded.
+[2025-10-31 03:09:48] Data loaded.
+[2025-10-31 03:11:31] Data loaded.
+[2025-10-31 03:16:30] Data loaded.
+[2025-10-31 03:19:45] Data loaded.
+[2025-10-31 03:19:52] Data loaded.
+[2025-10-31 03:19:57] Data loaded.
+[2025-10-31 03:20:03] Data loaded.
+[2025-10-31 03:20:06] Data loaded.
+[2025-10-31 03:20:11] Data loaded.
+[2025-10-31 03:20:11] Preparing features...
+[2025-10-31 03:20:14] Feature matrix prepared with 28 features.
+[2025-10-31 03:20:15] Starting XGBoost training...
+[2025-10-31 03:20:15] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:20:16] XGBoost training finished.
+[2025-10-31 03:20:16] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:21:20] Data loaded.
+[2025-10-31 03:21:25] Data loaded.
+[2025-10-31 03:21:30] Data loaded.
+[2025-10-31 03:21:35] Data loaded.
+[2025-10-31 03:21:40] Data loaded.
+[2025-10-31 03:21:44] Data loaded.
+[2025-10-31 03:21:44] Preparing features...
+[2025-10-31 03:21:47] Feature matrix prepared with 28 features.
+[2025-10-31 03:21:47] Starting XGBoost training...
+[2025-10-31 03:21:47] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:21:49] XGBoost training finished.
+[2025-10-31 03:21:49] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:21:56] Data loaded.
+[2025-10-31 03:22:13] Data loaded.
+[2025-10-31 03:22:16] Data loaded.
+[2025-10-31 03:23:51] Data loaded.
+[2025-10-31 03:23:56] Data loaded.
+[2025-10-31 03:24:01] Data loaded.
+[2025-10-31 03:24:05] Data loaded.
+[2025-10-31 03:24:11] Data loaded.
+[2025-10-31 03:24:27] Data loaded.
+[2025-10-31 03:24:27] Preparing features...
+[2025-10-31 03:24:31] Feature matrix prepared with 28 features.
+[2025-10-31 03:24:31] Starting XGBoost training...
+[2025-10-31 03:24:31] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:24:33] XGBoost training finished.
+[2025-10-31 03:24:33] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:24:39] Data loaded.
+[2025-10-31 03:24:45] Data loaded.
+[2025-10-31 03:25:32] Data loaded.
+[2025-10-31 03:25:40] Data loaded.
+[2025-10-31 03:25:43] Data loaded.
+[2025-10-31 03:25:48] Data loaded.
+[2025-10-31 03:25:57] Data loaded.
+[2025-10-31 03:26:07] Data loaded.
+[2025-10-31 03:26:07] Preparing features...
+[2025-10-31 03:26:11] Feature matrix prepared with 28 features.
+[2025-10-31 03:26:11] Starting XGBoost training...
+[2025-10-31 03:26:11] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:26:13] XGBoost training finished.
+[2025-10-31 03:26:13] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:26:22] Data loaded.
+[2025-10-31 03:26:27] Data loaded.
+[2025-10-31 03:26:34] Data loaded.
+[2025-10-31 03:26:48] Data loaded.
+[2025-10-31 03:27:22] Data loaded.
+[2025-10-31 03:27:39] Data loaded.
+[2025-10-31 03:27:43] Data loaded.
+[2025-10-31 03:27:50] Data loaded.
+[2025-10-31 03:27:55] Data loaded.
+[2025-10-31 03:27:57] Data loaded.
+[2025-10-31 03:27:57] Preparing features...
+[2025-10-31 03:28:01] Feature matrix prepared with 28 features.
+[2025-10-31 03:28:01] Starting XGBoost training...
+[2025-10-31 03:28:01] Failed with callback early stopping: XGBClassifier.fit() got an unexpected keyword argument 'callbacks'
+[2025-10-31 03:28:03] XGBoost training finished.
+[2025-10-31 03:28:03] Model evaluated: acc=0.5350, auc=0.4994625444604635
+[2025-10-31 03:28:17] Data loaded.
+[2025-10-31 03:28:20] Data loaded.
+[2025-10-31 03:28:26] Data loaded.
+[2025-10-31 03:28:32] Data loaded.
+[2025-10-31 03:28:37] Data loaded.

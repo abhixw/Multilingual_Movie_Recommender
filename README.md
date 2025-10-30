@@ -2,7 +2,7 @@
 
 ### 🧠 Extended Edition — Multi-language, Context-aware, Explainable, and Production-friendly
 
-![App Screenshot](Movie_Recommendation_ui.png)
+![App Screenshot](Screenshot%202025-10-31%20at%203.28.58 AM.png)
 
 ---
 
@@ -22,7 +22,6 @@ Built using **Streamlit**, **Python**, and **XGBoost**, the system combines **Co
 - 🧩 **Multiple Strategies:**
   - Top Rated Movies
   - Content-Based Similarity
-  
 - 🧠 **Explainable ML:** (optional) Uses XGBoost for per-movie “like/dislike” predictions.
 - 📊 **Interactive Dashboard:** Displays dataset statistics and analytics.
 - 🛠️ **Streamlit UI:** Fast, lightweight, and user-friendly web interface.
@@ -68,8 +67,6 @@ Uses XGBoost for binary classification (like/dislike) based on contextual featur
 Recommendation:
 Top Rated: Ranks by average rating.
 Content-Based: Uses genre and language similarity.
-
-
 Visualization:
 Displays data insights — total movies, ratings, users, and average rating via charts.
 📊 Example Dashboard

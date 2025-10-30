@@ -2,7 +2,7 @@
 
 ### 🧠 Extended Edition — Multi-language, Context-aware, Explainable, and Production-friendly
 
-![App Screenshot](Screenshot%202025-10-31%20at%203.28.58 AM.png)
+
 
 ---
 

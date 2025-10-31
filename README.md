@@ -49,37 +49,50 @@ Recommendator_Movies/
 ```bash
 git clone https://github.com/<your-username>/Recommendator_Movies.git
 cd Recommendator_Movies
+
 2️⃣ Create a virtual environment
 python3 -m venv venv
 source venv/bin/activate     # For Mac/Linux
 venv\Scripts\activate        # For Windows
+
 3️⃣ Install dependencies
 pip install -r requirements.txt
+
 4️⃣ Run the app
 streamlit run app.py
+
 🧩 How It Works
+
 Dataset Loading:
 Reads movie, user, and rating data (movies.dat, ratings.dat, users.dat).
+
 Feature Engineering:
 Extracts genres, encodes categorical features like language, mood, time, and weather.
+
 Training:
 Uses XGBoost for binary classification (like/dislike) based on contextual features.
+
 Recommendation:
 Top Rated: Ranks by average rating.
 Content-Based: Uses genre and language similarity.
+
 Visualization:
 Displays data insights — total movies, ratings, users, and average rating via charts.
+
 📊 Example Dashboard
 Dataset Overview Section:
 Total Movies: 60,000
 Total Ratings: 595,938
 Unique Users: 5,000
 Avg Rating: 3.46
+
 Charts:
 Movies per Language
 Ratings Distribution
 Top Genres by Popularity
+
 📚 Technologies Used
+
 Category	Tools
 Programming	Python 3.x
 ML Model	XGBoost
@@ -87,14 +100,17 @@ Web Framework	Streamlit
 Libraries	pandas, numpy, sklearn, matplotlib, seaborn
 Visualization	Plotly / Altair
 Data Format	.dat (MovieLens-style structured data)
+
 🧑‍💻 Example Commands
 To re-train ML model:
 python app.py --train
 To launch Streamlit dashboard:
 streamlit run app.py
+
 To update data:
 python generate_movies.py
 python generate_ratings.py
+
 🧠 Future Improvements
 Integration with real-world APIs (IMDb, TMDB)
 Deep learning embeddings (transformers)
